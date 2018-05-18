@@ -1,0 +1,20 @@
+scheduler_index:
+    path:     /
+    defaults: { _controller: OCAppointmentsBundle:Scheduler:index }
+    methods: [GET]
+
+scheduler_create:
+    path:      /appointment-create
+    defaults:  { _controller: OCAppointmentsBundle:Scheduler:create }
+    methods:  [POST]
+
+scheduler_update:
+    path:      /appointment-update
+    defaults:  { _controller: OCAppointmentsBundle:Scheduler:update }
+    methods:  [POST]
+
+scheduler_delete:
+    path:      /appointment-delete
+    defaults:  { _controller: OCAppointmentsBundle:Scheduler:delete }
+    methods:  [DELETE]
+
